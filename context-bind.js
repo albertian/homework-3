@@ -1,7 +1,7 @@
 /*
-When we call function as method of object team this-word points to the object so this.members is a proper array.
-Anonymous function doesnt inherit this-context, so this points to global object and probably without teamName property.
-Easiest way is to use arrow function expression. It support context binding.
+When we call function as method of object team "this"-word points to the object so this.members is a proper array.
+Standard anonymous function doesnt inherit "this"-context so its "this" is probably without teamName property.
+Easiest way is to use arrow function expression. It supports context binding.
 */
 
 const team = {

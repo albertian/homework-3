@@ -14,8 +14,9 @@ const fruits = ['Apple', 'Apricot', 'Avocado', 'banana', 'Blackberry', 'Blueberr
  * @returns {Boolean}
  */
 function fruitPresent(fruit) {
-    return fruits.some(item => item === fruit);
+    return fruits.some(item => item.toLowerCase() === fruit.toLowerCase());
 }
+
 //usage
 fruitPresent('Apple');//true
 fruitPresent('Miracle fruit');//true
@@ -32,7 +33,7 @@ It works. But it's not good idea to work with outer variable inside the function
  */
 function getFruitPresentFunction(fruits) {
     const obj = fruits.reduce((obj, item) => {
-        obj[item] = true;
+        obj[item.toLowerCase()] = true;
         return obj;
     }, {})
     return function (fruit) {
