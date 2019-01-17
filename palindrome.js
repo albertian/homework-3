@@ -6,7 +6,7 @@
 function isPalindrome(str) {
     const len = str.length;
     const middle = Math.round(len / 2);
-    for (let i = 0; i < len; i++) {
+    for (let i = 0; i < middle; i++) {
         if (str[i] !== str[len - i - 1]) {
             return false;
         }
