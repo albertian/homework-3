@@ -1,6 +1,6 @@
 /*
-When we call function as method of object team "this"-word points to the object so this.members is a proper array.
-Standard anonymous function doesnt inherit "this"-context so its "this" is probably without teamName property.
+When we call function as method of object team "this"-word (line 11) points to the object so this.members is a proper array.
+Standard anonymous function doesnt inherit "this"-context so its "this" (line 12) is probably without teamName property.
 Easiest way is to use arrow function expression. It supports context binding.
 */
 
